@@ -1,14 +1,18 @@
-/* Showing the use of sizeof operator */
 #include<stdio.h>
 #include<conio.h>
+void main()
+{
+  float p,t,r,si,a;
+  printf("What's the value of Principle Amount=> \n");
+  scanf("%f",&p);
+  printf("What's the value of Time(Time must be in year)=> \n");
+  scanf("%f",&t);
+  printf("What's the value of rate=> \n");
+  scanf("%f",&r);
+  si = p*t*r/100;
+  a = p+si;
+  printf("The Value of Simple Interest is %f and Amount is %f.",si,a);
+  getch();
 
-int main()
-{ 
-  
-    printf("Size of Character: %d.\n", sizeof(char));
-    printf("Size of Integer: %d. \n", sizeof(int));
-    printf("Size of Float: %d. \n", sizeof(float));
-    printf("Size of Double: %d.\n", sizeof(double));
-  
-  return 0;
 }
+    
